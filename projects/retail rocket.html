@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
   
-    <title>Fake Job Posting Detection</title>
+    <title>Retail Rocket Re-commender System</title>
   
     <!-- Favicons -->
     <link href="../assets/img/favicon.png" rel="icon">
@@ -77,26 +77,27 @@
             <div class="row">
                 <div class="col-lg-12 portfolio-info">
                     <br>
-                    <h2>Fake Job Posting Detection</h2>
+                    <h2>Retail Rocket Re-commender System</h2>
                     <ul>
-                        <li><strong>Tech Stack</strong>:  Data Mining, SMOTE, Bernoulli Naive Bayes, Exact Bayes, Laplace Smoothing</li>
-                        <li><strong>Link</strong>: <a href="C:\Users\Dell\Desktop\portfolio\vismayap98.github.io\projects\fake job posting code.pdf" target="_blank" class="btn">Project Link</a></li>
+                        <li><strong>Tech Stack</strong>: Python, SQL, AWS Lambda, XGBoost, Neural Networks</li>
+                        <li><strong>Link</strong>: <a href="C:\Users\Dell\Desktop\portfolio\vismayap98.github.io\projects\Final Project Repor- Group 6 - WBS (1).pdf" target="_blank" class="btn">Project Link</a></li>
                     </ul>
                     <p>
-                        Developed an advanced machine learning pipeline to detect fraudulent job postings using probabilistic classifiers and a dialer-based thresholding system. This project focused on identifying fake listings from over 500,000 job records, leveraging statistical learning methods to improve fraud detection accuracy.
-                        Key components included experimentation with Bernoulli Naive Bayes and Exact Bayes classifiers, supported by SMOTE for class balancing and Laplace smoothing for probability calibration. 
-                        A custom dialer system was designed to test and tune classification thresholds in real time, enhancing performance across multiple evaluation metrics.
+                        Built an end-to-end recommendation system using advanced machine learning models trained on over 1 million real-world retail transactions. The project aimed to predict product preferences and drive smarter, faster recommendations using a hybrid of XGBoost and Neural Networks, enabling personalized user experiences in real time.
+                        The system was deployed via AWS Lambda to ensure serverless, scalable model execution and integrated into a simulated e-commerce flow to test latency, accuracy, and user response rates. 
+                        Evaluation centered on improving recommendation relevance and system responsiveness.
+
                     </p>
                     <p>
                         Key features of the project include:
                     </p>
                     <div class="key-points">
                         <ul>
-                            <li>Improved fraud classification by applying Bernoulli and Exact Bayes with class rebalancing via SMOTE.</li>
-                            <li>Enabled dynamic performance tuning by adjusting fraud-detection cutoffs based on model confidence.</li>
-                            <li>Achieved F1 scores of 0.93 (Bernoulli NB) and 0.96 (Exact Bayes), validating model robustness on imbalanced data.</li>
-                            <li>Benchmarked model performance and fine-tuned feature selection to minimize runtime and increase accuracy.</li>
-                            <li>Laplace Smoothing used to manage sparse feature space, stabilizing predictions and reducing false positives.</li>
+                            <li> XGBoost + Neural Net Ensemble combined gradient boosting with deep learning to capture both structured patterns and non-linear behaviors.</li>
+                            <li> Generated real-time suggestions for cart additions, similar items, and cross-category bundles.</li>
+                            <li> Used SQL for preprocessing, feature engineering, and session-based behavioral metrics.</li>
+                            <li> Reduced infrastructure overhead and cut response times by 30% on average.</li>
+                            <li> R² Score of 0.69, delivered strong model performance for a multi-class recommendation setup.</li>
                         </ul>
                     </div>
                     
@@ -104,10 +105,10 @@
                     <h3>Key Insights</h3>
                     <div class="insights">
                         <ul>
-                            <li><strong>Exact Bayes consistently outperformed Bernoulli NB, especially at lower thresholds with SMOTE applied.</li>
-                            <li><strong>A mid-range threshold (0.35 to 0.45) yielded the best trade-off between false positives and recall.</li>
-                            <li><strong>Optimized features led to a ~20% speed gain while preserving model accuracy.</li>
-                            <li><strong> Job title, employment type, and location contributed most to fraud detection across both classifiers.</li>
+                            <li><strong> User session length, product views per session, and purchase frequency strongly impacted model accuracy.</li>
+                            <li><strong>AWS Lambda reduced traditional model latency from ~1.5s to ~1.0s, enabling smoother real-time UX.</li>
+                            <li><strong> Neural Nets enhanced prediction quality for long-tail products, while XGBoost dominated high-volume categories.</li>
+                            <li><strong> Training time was optimized using categorical encoding, feature pruning, and batch updates to accelerate convergence.</li>
 
                         </ul>
                     </div>
