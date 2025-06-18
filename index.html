@@ -734,6 +734,47 @@ Over time, I’ve explored AI, machine learning, and data projects that pushed m
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+<!--scroll based sectiontracking script-->
+
+<script>
+  const trackedSections = [
+    { id: 'about', name: 'About' },
+    { id: 'skills', name: 'Skills' },
+    { id: 'portfolio', name: 'Projects' },
+    { id: 'education', name: 'Education' },
+    { id: 'experience', name: 'Experience' },
+    { id: 'contacts', name: 'Contact' }
+  ];
+
+  const options = {
+    threshold: 0.6  // Trigger when 60% of section is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.dataset.tracked) {
+        const sectionName = entry.target.dataset.sectionName;
+        gtag('event', 'section_view', {
+          section_name: sectionName
+        });
+        entry.target.dataset.tracked = true;  // prevent duplicate tracking
+      }
+    });
+  }, options);
+
+  trackedSections.forEach(section => {
+    const el = document.getElementById(section.id);
+    if (el) {
+      el.dataset.sectionName = section.name;
+      observer.observe(el);
+    }
+  });
+</script>
+<!-- end scroll based sectiontracking script-->
+
+
+
+
 </body>
 
 </html>
