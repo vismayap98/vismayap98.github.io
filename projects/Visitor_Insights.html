@@ -58,11 +58,17 @@
             padding: 15px;
             border-radius: 5px;
         }
+
+        .insights {
+            margin-top: 15px;
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
-<!-- ======= Portfolio Details ======= -->
 <main id="main">
     <div id="portfolio-details" class="portfolio-details">
         <div class="container">
@@ -72,33 +78,41 @@
                     <br>
                     <h2>Visitor Insights</h2>
                     <ul>
-                        <li><strong>Tech Stack</strong>: Google Analytics 4, Looker Studio, JavaScript, HTML, GA4 Events</li>
-                        <li><strong>Link</strong>: <a href="https://vismayap98.github.io/#visitor-insight" target="_blank" class="btn">Project Section</a></li>
+                        <li><strong>Tech Stack</strong>: Google Analytics 4, Looker Studio, JavaScript, HTML</li>
+                        <li><strong>Link</strong>: <a href="https://vismayap98.github.io/#visitor-insight" target="_blank" class="btn">View in Portfolio</a></li>
                     </ul>
                     <p>
-                        This project showcases a real-time visitor tracking solution implemented on my personal portfolio site. Custom section view tracking was implemented using Google Analytics 4 and JavaScript's <code>IntersectionObserver</code>. The data is collected and visualized using Looker Studio for dynamic analysis of audience behavior.
+                        This project showcases a real-time visitor tracking solution integrated directly into my personal portfolio website.
+                        I used <strong>Google Analytics 4</strong> to track behavior and custom section views via JavaScript's <code>IntersectionObserver</code>, and visualized the data using <strong>Looker Studio</strong>.
                     </p>
-                    <p>
-                        Key features of the project include:
-                    </p>
+
                     <div class="key-points">
                         <ul>
-                            <li>Custom section-based view tracking using IntersectionObserver and GA4 event tags.</li>
-                            <li>Real-time reporting of sessions, locations, devices, and engagement using Looker Studio.</li>
-                            <li>GA4 filters to exclude bots and unengaged users for clean analytics.</li>
-                            <li>Visual insights on most visited sections, country-level traffic, and device usage.</li>
-                            <li>Accessible directly via the "Visitor Insights" section of my personal portfolio website.</li>
+                            <li>Implemented custom <code>section_view</code> events to track when users scroll into key sections of the site.</li>
+                            <li>Created real-time dashboards showing device category, session trends, country of origin, and engagement.</li>
+                            <li>Configured GA4 custom dimensions to capture section names and enabled rich reporting.</li>
+                            <li>Added a scroll-based observer to dynamically push view data into GA4 with zero latency.</li>
+                            <li>Embedded the Looker Studio dashboard seamlessly into the portfolio for live reporting.</li>
                         </ul>
                     </div>
-                    <p>
-                        This solution helps understand user attention patterns across different content sections without using cloud-based resources like AWS or serverless Lambda logic.
-                    </p>
+
+                    <h3>How to View</h3>
+                    <p>You can view the dashboard under the <strong>"Visitor Insights"</strong> section of my <a href="https://vismayap98.github.io/" target="_blank">portfolio website</a> or access it directly via the link above.</p>
+
+                    <h3>Key Insights</h3>
+                    <div class="insights">
+                        <ul>
+                            <li>Geographic and device-based visitor distribution across portfolio sections</li>
+                            <li>Real-time session activity, engagement rate, and returning users</li>
+                            <li>Most viewed content blocks based on custom section interactions</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </div><!-- End Portfolio Details -->
-</main><!-- End #main -->
+    </div>
+</main>
 
 <!-- Vendor JS Files -->
 <script src="../assets/vendor/jquery/jquery.min.js"></script>
