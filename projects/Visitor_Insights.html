@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visitor Insights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #1c7d32;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 30px;
+    }
+    .note {
+      font-size: 0.95em;
+      margin-top: 15px;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Visitor Insights</h1>
+    <p>Track real-time user behavior, engagement, and interaction across my personal portfolio.</p>
+  </header>
+
+  <div class="container">
+    <p>This project showcases how I implemented a live visitor tracking solution using <strong>Google Analytics 4</strong> and <strong>Looker Studio</strong>. Custom events were sent using JavaScript's <code>IntersectionObserver</code> to track scroll-based section views. The data was then visualized dynamically to understand which parts of my portfolio attract the most attention.</p>
+
+    <p class="note">
+      🔗 You can view this project directly on this page or simply navigate to the <strong>"Visitor Insights"</strong> section on my main <a href="index.html#visitor-insight">portfolio site</a>.
+    </p>
+
+    <h2>Live Dashboard</h2>
+    <iframe src="https://lookerstudio.google.com/embed/reporting/41e78bc3-4ecf-47bd-bf52-8134095eb612/page/hj6NF" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+  </div>
+
+</body>
+</html>
